@@ -8,6 +8,7 @@ scrape_configs:
 
   - job_name: 'bullmq'
     scheme: http
+    metrics_path: /metrics
     static_configs:
       - targets: ['abyss-agent-testnet.railway.internal']
 
